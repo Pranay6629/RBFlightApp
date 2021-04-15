@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rect">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/flightdate"
+            android:textColor="#000"
+            android:text="Date"
+            android:textSize="15sp"
+            android:padding="12dp"
+            android:background="#D3D3D3"/>
+
+        <RelativeLayout
+            android:id="@+id/realPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/flightdate"
+            android:background="@drawable/rect">
+
+            <ImageView
+                android:id="@+id/flightImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_flight"
+                android:padding="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flightname"
+                android:textColor="#000"
+                android:text="Flight name"
+                android:textSize="15sp"
+                android:padding="12dp"
+                android:layout_toRightOf="@+id/flightImage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flighttime"
+                android:textColor="#000"
+                android:text="Flight time"
+                android:textSize="15sp"
+                android:padding="12dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
